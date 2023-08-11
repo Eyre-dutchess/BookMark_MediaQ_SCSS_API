@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bda5357418.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <button class="header-btn" aria-expanded="false"></button>
+        <nav class="header-nav" data-visible="false">
+            <ul class="header-list">
+                <li class="header-item"><a href="#">Features</a></li>
+                <li class="header-item"><a href="#">Pricing</a></li>
+                <li class="header-item"><a href="#">Contact</a></li>
+                <li class="header-item"><a href="#">Login</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <img data-img src="./images/illustration-hero.svg" alt="" class="hero-img">
+            <div class="hero-content">
+                <h1 class="hero-title">A simple bookamrk manager</h1>
+                <div class="title-anima">
+                    <span>A Simple</span>
+                    <span>Bookmark</span>
+                    <span>Manager</span>
+                </div>
+                <p class="infor">A clean and simple interface to organize your favourite websites. Open a new 
+                    browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="links">
+                    <a href="#">Get it on Chrome</a>
+                    <a href="#">Get it on Firefox</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-top">
+                <h2 class="feature-title">Feature</h2>
+                <p class="feature-infor">Our aim is to make it quick and easy for you to access your favourite websites. 
+                    Your bookmarks sync between your devices so you can access them on the go.</p>
+            </div>
+
+            <nav class="feature-nav">
+                <ul class="feature-list" data-feature-list>
+                    <li class="feature-item active">Simple Bookmarking</li>
+                    <li class="feature-item">Speedy Searching</li>
+                    <li class="feature-item">Easy Sharing</li>
+                </ul>
+            </nav>
+
+            <div class="feature-detail-container">
+                <ul class="feature-detail-list" data-feature-detail-container>
+                    <li class="feature-detail-item active">
+                        <img data-img src="./images/illustration-features-tab-1.svg" alt="" class="detail-img">
+                        <div class="detail-content">
+                            <h2 class="detail-title">Bookmark in one click</h2>
+                            <p class="detail-infor">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                                gives you complete control over how you manage your favourite sites.</p>
+                            <a href="#" class="more-infor">More Infor</a>
+                        </div>
+                    </li>
+                    <li class="feature-detail-item">
+                        <img data-img src="./images/illustration-features-tab-2.svg" alt="" class="detail-img">
+                        <div class="detail-content">
+                            <h2 class="detail-title">Intelligent search</h2>
+                            <p class="detail-infor">Our powerful search feature will help you find saved sites in no time at all. 
+                                No need to trawl through all of your bookmarks.</p>
+                            <a href="#" class="more-infor">More Infor</a>
+                        </div>
+                    </li>
+                    <li class="feature-detail-item">
+                        <img data-img src="./images/illustration-features-tab-3.svg" alt="" class="detail-img">
+                        <div class="detail-content">
+                            <h2 class="detail-title">Share your bookmarks</h2>
+                            <p class="detail-infor">Easily share your bookmarks and collections with others. Create a shareable 
+                                link that you can send at the click of a button.</p>
+                            <a href="#" class="more-infor">More Infor</a>
+                        </div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="extend-section">
+            <div class="extend-top">
+                <h2 class="extend-title">Download the extendsion</h2>
+                <p class="extend-infor">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                    got a favourite you’d like us to prioritize.</p>
+            </div>
+            <div class="extend-container">
+                <div class="extension active">
+                    <img src="./images/logo-chrome.svg" alt="">
+                    <h6 class="name">Add to Chrome</h6>
+                    <p class="version">Minimum version 62</p>
+                    <div class="dot-line"></div>
+                    <a href="#" class="add-install">Add & Install Extendsion</a>
+                </div>
+                <div class="extension">
+                    <img src="./images/logo-firefox.svg" alt="">
+                    <h6 class="name">Add to Firefox</h6>
+                    <p class="version">Minimum version 55</p>
+                    <div class="dot-line"></div>
+                    <a href="#" class="add-install">Add & Install Extendsion</a>
+                </div>
+                <div class="extension">
+                    <img src="./images/logo-opera.svg" alt="">
+                    <h6 class="name">Add to Opera</h6>
+                    <p class="version">Minimum version 46</p>
+                    <div class="dot-line"></div>
+                    <a href="#" class="add-install">Add & Install Extendsion</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-infor">Here are some of our FAQs. If you have any other questions you’d like 
+                answered please feel free to email us.</p>
+            <ul class="faq-list" data-faq-container>
+                <!-- <li class="faq-item">
+                    <div class="faq-top">
+                        <h6 class="question">What is Bookmark?</h6>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, repellendus!</p>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-top">
+                        <h6 class="question">How can I request a new browser?</h6>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ea velit doloremque quam ipsam?</p>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-top">
+                        <h6 class="question"> Is there a mobile ah6p?</h6>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, enim!</p>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-top">
+                        <h6 class="question">What about other Chromium browsers?</h6>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, saepe!</p>
+                </li> -->
+            </ul>
+            <a href="#" class="more-infor">More Infor</a>
+        </div>
+
+
+        <div class="cta-section">
+            <p>35,000+ already joined</p>
+            <h1 class="cta-title">Stay up-to-date with what we’re doing</h1>
+            <form action="" class="cta-form">
+                <div class="email" data-email-container>
+                    <input type="email">
+                    <img src="./images/icon-error.svg" alt="">
+                    <span>whoops, make sure it's an email</span>
+                </div>
+                <button href="" class="contact-btn">Contact Us</button>
+            </form>
+        </div>
+
+        <div class="api-section">
+            <h2 class="api-title">Our Offer</h2>
+            <div class="fav-container" >
+                <ul class="fav-list" data-fav-container>
+                    <!-- <li class="fav-item">
+                        <img src="" alt="" class="fav-img">
+                        <h6 class="fav-name">esdfjk</h6>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="random-container" data-random-container>
+                <!-- <div class="random-item">
+                    <img src="./images/illustration-features-tab-1.svg" alt="" class="random-img">
+                    <div class="random-content">
+                        <h6 class="random-name">shdkls</h6>
+                        <p class="random-infor">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, reiciendis?</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./images/logo-bookmark-footer.svg" alt="" class="footer-logo">
+        <nav class="footer-nav">
+            <ul class="footer-list">
+                <li class="footer-item"><a href="#">Features</a></li>
+                <li class="footer-item"><a href="#">Pricing</a></li>
+                <li class="footer-item"><a href="#">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </nav>
+    </footer>
+    
+</body>
+</html>

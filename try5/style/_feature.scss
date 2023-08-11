@@ -1,0 +1,189 @@
+@import "./nav";
+@import "./media";
+
+.feature-section{
+    width: 100%;
+    padding: 1em 5vw;
+    text-align: center;
+
+    .feature-top{
+        p{
+            line-height: 1.2;
+            margin-block: 1em 2em;
+            padding-inline: 5vw;
+        }
+    }
+    .feature-nav{
+        width: 100%;
+        border-top: 1px solid $clr-primary-3;
+        .feature-list{
+            @extend .header-list;
+            .feature-item{
+                color: $clr-dark-8;
+                padding-block: 1em;
+                position: relative;
+                cursor: pointer;
+
+                &.active::after{
+                    transform: scale(1, 1);
+                }
+                &:hover::after{
+                    transform: scale(1, 1);
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 90vw;
+                    height: 1px;
+                    background-color: $clr-primary-3;
+                    bottom:0;
+                    left: calc(50% - 45vw);
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 80%;
+                    height: 0.2em;
+                    background-color: $clr-accent-5;
+                    bottom: 0;
+                    left: 10%;
+                    transform: scale(0, 1);
+                    transition: $trans;
+                    transform-origin: left;
+                }
+            }
+        }
+    }
+
+    .feature-detail-container{
+        width: 100%;
+        height: 80vh;
+        margin-block: 2em;
+        padding: 1em;
+
+        .feature-detail-list{
+            position: relative;
+            list-style: none;
+
+
+            .feature-detail-item{
+                position: absolute;
+                height: 60vh;
+                display: none;
+                z-index: 0;
+                &.show::after{
+                    transform: scale(1, 1);
+                }
+
+
+
+                &::after{
+                    content:"";
+                    position: absolute;
+                    width: 100%;
+                    height: 50vw;
+                    top: 3em;
+                    left: -10vw;
+                    background-color: $clr-accent-4;
+                    border-radius: 0 100vw 100vw 0;
+                    z-index: -1;
+                    transform: scale(0, 1);
+                    transition: all 500ms ease-in 100ms;
+                    transform-origin: left;
+                }
+                &.active{
+                    display: block;
+                }
+                .detail-img{
+                    width: 100%;
+                    aspect-ratio: 5/3;
+                    object-fit: contain;
+                }
+                .detail-content{
+                    margin-block:  4em 1em;
+                    h2{
+                        line-height: 1;
+                    }
+                    p{
+                        line-height: 1.2;
+                        margin-block: 1em;
+                    }
+                    .more-infor{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include sm{
+    .feature-section{
+        .feature-top{
+            max-width: 600px;
+            margin-inline: auto;
+        }
+        .feature-nav{
+            border-top: none;
+            
+    
+           .feature-list{
+            max-width: 600px;
+            margin-inline: auto;
+            overflow: hidden;
+            @include flex(row, center , center );
+            gap: 5vw;
+           }
+        }
+        .feature-detail-container{
+            padding: 0;
+
+            .feature-detail-list{
+                width: 100%;
+                height: 60vh;
+                .feature-detail-item{
+                    width: 100%;
+                    height: 100%;
+                    
+                
+
+                    &::after{
+                        content:"";
+                        position: absolute;
+                        width: 50%;
+                        height: 30vw;
+                        top: 35%;
+                        left: -10vw;
+                        background-color: $clr-accent-4;
+                        border-radius: 0 100vw 100vw 0;
+                        z-index: -1;
+                        
+                    }
+                    &.active{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        gap: 5vw;
+                    }
+                    
+                    .detail-content{
+                        text-align: left;
+                        padding: 2em 0;
+                        margin-block: 0;
+                        h2{
+                            text-align: left;
+                        }
+                        p{
+                            line-height: 1.2;
+                            margin-block: 1em;
+                        }
+                        .more-infor{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
